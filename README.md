@@ -1,32 +1,82 @@
-# AI Model List
+# AI Model List Generator
 
-A simple, maintainable list of AI model identifiers organized by capability type. This repository contains up-to-date model IDs for various AI providers including OpenAI, Anthropic, Google, and more.
+A simple repository containing AI model identifiers and a generator script. The repository uses a single source of truth (`models.json`) and generates various formats for different use cases.
 
+## Structure
 
-## Model Categories
+```
+.
+├── models.json         # Source of truth - all model definitions
+├── src/
+│   └── main.rs        # Generator script
+├── generated/
+│   ├── models.csv     # Generated CSV format
+│   └── models.md      # Generated Markdown documentation
+└── Cargo.toml         # Rust project configuration
+```
 
-- `MEMO_MODELS`: Models used for memo processing and generation
-- `CHAT_MODELS`: Models used for chat/conversation applications
-- `GRAPH_MODELS`: Models used for graph generation
+## Usage
 
-## Installation Methods
+### Directly Using models.json
 
-### Direct inclusion in your project
-
-If you prefer not to use npm, you can copy `models.js` directly into your project:
-
-1. Copy `models.js` to your project's source directory
-2. Import directly from the file location:
+The `models.json` file can be directly imported into your projects. It contains model IDs organized by capability (memo, chat, graph):
 
 ```javascript
-import { CHAT_MODELS } from './path/to/models';
+import models from './models.json';
+
+// Access model IDs
+const chatModelId = models.models.chat.GPT_4O;  // "gpt-4o-2024-11-20"
 ```
 
-### Git Submodule
+### Generating Other Formats
 
-You can also include this repository as a Git submodule:
+To generate CSV and Markdown formats:
 
+1. Install Rust if you haven't already: [https://rustup.rs/](https://rustup.rs/)
+
+2. Run the generator:
 ```bash
-git submodule add https://github.com/yourorg/ai-model-list.git
-git submodule update --init --recursive
+cargo run
 ```
+
+This will create the following files in the `generated` directory:
+- `models.csv`: Spreadsheet-friendly format
+- `models.md`: Human-readable documentation
+
+## Updating Models
+
+To add or update models:
+
+1. Edit `models.json`
+2. Run the generator
+3. Commit changes
+
+## Format Details
+
+### models.json
+```json
+{
+  "models": {
+    "memo": {
+      "MODEL_NAME": "model-id",
+      ...
+    },
+    "chat": {
+      ...
+    },
+    "graph": {
+      ...
+    }
+  }
+}
+```
+
+### Generated CSV
+```csv
+category,model_name,model_id
+memo,GPT_4O,gpt-4o-2024-11-20
+...
+```
+
+### Generated Markdown
+Organized by capability type with tables for each category.
