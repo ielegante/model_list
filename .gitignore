@@ -1,0 +1,21 @@
+# Rust specific
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Generated files
+/generated/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*~
