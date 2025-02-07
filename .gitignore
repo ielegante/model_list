@@ -3,9 +3,6 @@
 **/*.rs.bk
 Cargo.lock
 
-# Generated files
-/generated/
-
 # OS specific
 .DS_Store
 Thumbs.db
