@@ -10,7 +10,8 @@
       "CLAUDE_3_5_SONNET": "claude-3-5-sonnet-20241022",
       "CLAUDE_3_OPUS": "claude-3-opus-20240229",
       "LLAMA_3_70B": "llama3-70b-8192",
-      "LLAMA_3_3_70B": "llama-3.3-70b-versatile"
+      "LLAMA_3_3_70B": "llama-3.3-70b-versatile",
+      "QWEN_2_72B_INSTRUCT": "qwen2-72b-instruct"
     },
     "chat": {
       "preferred": {
@@ -23,6 +24,8 @@
         "o3_MINI": "o3-mini-2025-01-31"
       },
       "others": {
+        "DEEPSEEK_R1_QWEN_32B": "deepseek-r1-qwen-32b",
+        "QWEN_2_72B": "qwen2-72b",
         "CLAUDE_3_OPUS": "claude-3-opus-20240229",
         "LLAMA_3_3_70B": "llama-3.3-70b-versatile",
         "GPT_4O_MINI": "gpt-4o-mini-2024-07-18",
