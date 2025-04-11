@@ -2,8 +2,7 @@
   "models": {
     "memo": {
       "GEMINI_2_0_FLASH": "gemini-2.0-flash",
-      "GEMINI_2_0_PRO": "gemini-2.0-pro-exp-02-05",
-      "GEMINI_2_5_PRO": "gemini-2.5-pro-exp-03-25",
+      "GEMINI_2_5_PRO": "gemini-2.5-pro-preview-03-25",
       "GEMINI_1_5_PRO": "gemini-1.5-pro-002",
       "DEEPSEEK_REASONER": "deepseek-reasoner",
       "CLAUDE_3_7_SONNET": "claude-3-7-sonnet-20250219",
@@ -19,18 +18,17 @@
     },
     "chat": {
       "preferred": {
-        "GPT_4o": "gpt-4o-2024-11-20",
-        "CLAUDE_3_7_SONNET": "claude-3-7-sonnet-20250219",
-        "CLAUDE_3_5_SONNETv2": "claude-3-5-sonnet-20241022",
         "GEMINI_2_0_FLASH": "gemini-2.0-flash",
         "GEMINI_1_5_PRO": "gemini-1.5-pro-002",
-        "GEMINI_2_0_PRO": "gemini-2.0-pro-exp-02-05",
-        "GEMINI_2_5_PRO": "gemini-2.5-pro-exp-03-25",
+        "GEMINI_2_5_PRO": "gemini-2.5-pro-preview-03-25",
         "DEEPSEEK_CHAT": "deepseek-chat",
-        "o1": "o1-2024-12-17",
-        "o3_MINI": "o3-mini-2025-01-31",
         "LLAMA_3_70B": "llama3-70b-8192",
-        "LLAMA_3_3_70B": "llama-3.3-70b-versatile"
+        "LLAMA_3_3_70B": "llama-3.3-70b-versatile",
+        "CLAUDE_3_7_SONNET": "claude-3-7-sonnet-20250219",
+        "CLAUDE_3_5_SONNETv2": "claude-3-5-sonnet-20241022",
+        "GPT_4o": "gpt-4o-2024-11-20",
+        "o1": "o1-2024-12-17",
+        "o3_MINI": "o3-mini-2025-01-31"
       },
       "others": {
         "DEEPSEEK_R1_QWEN_32B": "deepseek-r1-qwen-32b",
